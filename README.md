@@ -1,6 +1,26 @@
 # *RDJ - Dj's Music from youtube as PRO 📀🚀*
 
-[![MIT](https://badgen.net/badge/license/MIT/blue)](https://github.com/LokeshKumar-Dev/Rdj.exe/blob/master/LICENSE)
+<br/>
+<div align="center">
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+  <img src="https://forthebadge.com/images/badges/uses-brains.svg" />
+  <img src="https://forthebadge.com/images/badges/powered-by-responsibility.svg" />
+  <br/>
+  <img src="https://img.shields.io/github/repo-size/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed-raw/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/stars/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/forks/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/contributors/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/LokeshKumar-Dev/Rdj.exe?style=for-the-badge" />
+  
+</div>
+<br/>
+   
 
 ![Rdj.exe](https://github.com/LokeshKumar-Dev/Rdj.exe/blob/master/rdj.jpg)
 
