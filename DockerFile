@@ -1,0 +1,23 @@
+FROM node:14
+
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY ..
+
+RUN npm run build
+
+EXPOSE 5000
+
+#set environment variables if need by using command:
+#ENV VARIABLE_NAME value
+
+CMD ["npm","start"]
+
+#To utilize this Dockerfile, ensure that it is located in the main directory of
+#your web appliaction,You can build a Docker Image using the command:
+#docker run -d -p 5000:5000 CONTAINER_NAME
+#It will run on http://localhost:5000
