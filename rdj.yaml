@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rdj-deployment
+  labels:
+    app: rdj
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: rdj
+  template:
+    metadata:
+      labels:
+        app: rdj
+    spec:
+      containers:
+        - name: rdj-container
+          image: your-docker-image:tag #your_docker_image should be replaced wit#h name of your docker registry and tag with the version.
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rdj-service
+spec:
+  selector:
+    app: rdj
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+
+#kubectl apply -f rdj.yaml (To create a deplotment for rdj app)
+
