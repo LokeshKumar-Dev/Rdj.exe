@@ -1,0 +1,14 @@
+:root {
+  --primary: #7056bb;
+  --background: #131718;
+  --gray: #7f8082;
+  --lightBlack: #1f2022;
+}
+
+body {
+  /* background-color: red; */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
