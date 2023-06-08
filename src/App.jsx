@@ -1,3 +1,4 @@
+import SearchBar from "./components/SearchBar";
 import Disc from "./components/Disc";
 import Slider from "./components/Slider";
 
@@ -38,8 +39,10 @@ function App() {
       </div>
 
       {/* Lower Panel with Search , Song List and Round Controllers */}
-      <div className="h-[40vh] w-full grid grid-cols-3 items-center justify-center">
-        <div></div>
+      <div className="h-[40vh] w-full grid grid-cols-3 items-center justify-center p-4 gap-4">
+        <div className="flex flex-col items-center w-full ">
+          <SearchBar />
+        </div>
         <div></div>
         <div></div>
       </div>
