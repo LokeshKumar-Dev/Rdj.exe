@@ -1,10 +1,13 @@
 import SearchBar from "./components/SearchBar";
 import Disc from "./components/Disc";
 import Slider from "./components/Slider";
+import SongList from "./components/SongList";
+import MusicController from "./components/MusicController";
+import songs from "./dummy/songs.json";
 
 function App() {
   return (
-    <div className="w-screen h-screen bg-background overflow-hidden">
+    <div className="w-full min-h-screen bg-background">
       {/* Upper Panel with Disc and Sliders */}
       <div className="h-[60vh] w-full grid grid-cols-3 items-center justify-center">
         <div className="h-full">
@@ -39,12 +42,20 @@ function App() {
       </div>
 
       {/* Lower Panel with Search , Song List and Round Controllers */}
-      <div className="h-[40vh] w-full grid grid-cols-3 items-center justify-center p-4 gap-4">
-        <div className="flex flex-col items-center w-full ">
-          <SearchBar />
+      <div className="h-full w-full grid grid-cols-3 p-4 mt-8 gap-4">
+        <div className="flex flex-col w-full gap-4">
+          <h2 className="font-bold text-2xl text-gray-500">Track 1</h2>
+          <SearchBar placeholder="Search Tracks, Songs" />
+          <MusicController song={songs[0]} />
+          <SongList />
         </div>
         <div></div>
-        <div></div>
+        <div className="flex flex-col w-full gap-4">
+          <h2 className="font-bold text-2xl text-gray-500">Track 2</h2>
+          <SearchBar placeholder="Search Tracks, Songs" />
+          <MusicController song={songs[0]} />
+          <SongList />
+        </div>
       </div>
     </div>
   );
