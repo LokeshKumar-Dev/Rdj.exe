@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Disc({ className, title, status = "playing" }) {
   // Add more breakpoints for width , height and circle size to make it more responsive.
   return (
@@ -13,18 +15,13 @@ function Disc({ className, title, status = "playing" }) {
         {title}
       </div>
     </div>
-    // <div
-    //   className={
-    //     "w-[16rem] h-[16rem] rounded-full outline-[16rem] outline-primary outline m-[2rem] cursor-pointer  " +
-    //     (status === "playing" ? "disc-animation " : " ") +
-    //     className
-    //   }
-    // >
-    //   <div className="absolute text-white font-bold -bottom-[10rem] left-[5rem] opacity-50 -rotate-90">
-    //     {title}
-    //   </div>
-    // </div>
   );
 }
+
+Disc.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  status: PropTypes.oneOf(["playing", "paused"]),
+};
 
 export default Disc;
