@@ -1,4 +1,3 @@
-import { useState } from "react";
 import RangeSlider from "react-range-slider-input";
 import PropTypes from "prop-types";
 import "../css/range-slider.css";
@@ -8,9 +7,11 @@ function Slider({
   disabled,
   className,
   thumbType = "circle",
+  min = 0,
+  max = 100,
+  value = 0,
+  onChange,
 }) {
-  const [value, setValue] = useState(40); // 0 - 100
-
   return (
     <RangeSlider
       className={
@@ -24,17 +25,17 @@ function Slider({
       orientation={orientation}
       disabled={disabled}
       value={orientation == "vertical" ? [100 - value, 100] : [0, value]}
-      min={0}
-      max={100}
+      min={min}
+      max={max}
       thumbsDisabled={orientation == "vertical" ? [false, true] : [true, false]}
       rangeSlideDisabled
       onInput={(val) => {
         if (orientation === "vertical") {
-          console.debug(100 - val[0]);
-          setValue(100 - val[0]);
+          // console.debug(100 - val[0]);
+          onChange(100 - val[0]);
         } else {
-          console.debug(val[1]);
-          setValue(val[1]);
+          // console.debug(val[1]);
+          onChange(val[1]);
         }
       }}
     />
@@ -44,6 +45,12 @@ function Slider({
 Slider.propTypes = {
   orientation: PropTypes.oneOf(["vertical", "horizontal"]),
   thumbType: PropTypes.oneOf(["square", "circle"]),
+  disabled: PropTypes.bool,
+  className: PropTypes.string,
+  min: PropTypes.number,
+  max: PropTypes.number,
+  value: PropTypes.number,
+  onChange: PropTypes.func,
 };
 
 export default Slider;
