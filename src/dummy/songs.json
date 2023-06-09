@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Shape of You",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/b/b4/Shape_Of_You_%28Official_Single_Cover%29_by_Ed_Sheeran.png",
+    "movie": null,
+    "singers": ["Ed Sheeran"],
+    "duration": 234
+  },
+  {
+    "title": "Love Story",
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/en/0/01/Taylor_Swift_-_Love_Story.png",
+    "movie": null,
+    "singers": ["Taylor Swift"],
+    "duration": 201
+  },
+  {
+    "title": "Lose Yourself",
+    "thumbnail": "https://i1.sndcdn.com/artworks-krvHj80IMCtcIWUw-ADDbuw-t500x500.jpg",
+    "movie": "8 Mile",
+    "singers": ["Eminem"],
+    "duration": 320
+  },
+  {
+    "title": "Tum Hi Ho",
+    "thumbnail": "https://c.saavncdn.com/430/Aashiqui-2-Hindi-2013-500x500.jpg",
+    "movie": "Aashiqui 2",
+    "singers": ["Arijit Singh"],
+    "duration": 278
+  },
+
+  {
+    "title": "Gerua",
+    "thumbnail": "https://a10.gaanacdn.com/images/albums/58/1609058/crop_480x480_1609058.jpg",
+    "movie": "Dilwale",
+    "singers": ["Arijit Singh"],
+    "duration": 345
+  }
+]
